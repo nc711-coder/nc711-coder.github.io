@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DocSift: AI document extraction</title>
+<meta name="description" content="Turns invoices, receipts and W-9s, including scans and phone photos, into checked data.">
+<meta property="og:title" content="DocSift: AI document extraction"><meta property="og:description" content="Turns invoices, receipts and W-9s, including scans and phone photos, into checked data."><meta property="og:type" content="website">
+<style>
+:root{--bg:#f5f4ef;--card:#fff;--ink:#1d2321;--muted:#5e6763;--line:#dfddd4;--accent:#1f6f5c}
+@media (prefers-color-scheme:dark){:root{--bg:#141816;--card:#1c211f;--ink:#e8ebe7;--muted:#9aa49f;--line:#2e3532;--accent:#4fb596}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 16px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 8px}p.lead{color:var(--muted);margin:0 0 28px;font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 36px}
+a.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+a.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+h2{font-size:1.15rem;margin:28px 0 8px}ul{padding-left:20px;margin:0}li{margin:6px 0}
+.note{color:var(--muted);font-size:.9rem;margin-top:36px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--accent)}
+</style></head>
+<body><main>
+<h1>DocSift: AI document extraction</h1>
+<p class="lead">Turns invoices, receipts and W-9s (PDFs, scans or phone photos) into clean, checked data.</p>
+<div class="btns"><a class="btn primary" href="https://docsift-288399809809.us-west1.run.app">Try the live demo →</a><a class="btn" href="https://github.com/nc711-coder/docsift">Source code on GitHub</a></div>
+<h2>What it does</h2><ul><li>Reads clean PDFs, scans and phone photos (finds the page, straightens it, OCR)</li><li>Checks every value against the page and the math before approving</li><li>Sends anything doubtful, like a possible duplicate, to a person with the exact reason</li><li>Masks tax IDs and card numbers; originals are deleted after 24 hours</li><li>In testing on 60 documents, 100% of auto-approved documents were correct</li></ul>
+<h2>Built with</h2><p>Python, FastAPI, Tesseract OCR, OpenCV, an open-weight LLM with structured output, n8n, Google Sheets, Google Cloud Run.</p>
+<p class="note">Try the built-in synthetic samples; please don't upload real documents. The demo may take a few seconds to wake up on the first visit.</p>
+</main></body></html>
